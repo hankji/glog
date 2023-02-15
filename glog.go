@@ -1178,3 +1178,8 @@ func Exitf(format string, args ...interface{}) {
 	atomic.StoreUint32(&fatalNoStacks, 1)
 	logging.printf(fatalLog, format, args...)
 }
+
+// SetThreshold set log threshold level
+func SetThreshold(threshold string) {
+	logging.stderrThreshold = threshold
+}
