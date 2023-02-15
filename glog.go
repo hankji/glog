@@ -1180,6 +1180,6 @@ func Exitf(format string, args ...interface{}) {
 }
 
 // SetThreshold set log threshold level
-func SetThreshold(threshold string) {
+func SetThreshold(threshold severity) {
 	logging.stderrThreshold = threshold
 }
