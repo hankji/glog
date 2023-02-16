@@ -1183,3 +1183,8 @@ func Exitf(format string, args ...interface{}) {
 func SetThreshold(threshold severity) {
 	logging.stderrThreshold = threshold
 }
+
+// SetLogtostderr set whether to stderr
+func SetLogtostderr(enable bool) {
+	logging.toStderr = enable
+}
