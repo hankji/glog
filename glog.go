@@ -621,8 +621,8 @@ func Exitf(format string, args ...any) {
 }
 
 // SetThreshold set log threshold level
-func SetThreshold(level string) {
-	return stderrThreshold.Set()
+func SetThreshold(level string) error {
+	return stderrThreshold.Set(level)
 }
 
 // SetLogtostderr set whether to stderr
