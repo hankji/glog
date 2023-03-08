@@ -1,3 +1,3 @@
-module github.com/golang/glog
+module github.com/hankji/glog
 
 go 1.18
