@@ -33,7 +33,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang/glog/internal/logsink"
+	"github.com/hankji/glog/internal/logsink"
 )
 
 // logDirs lists the candidate directories for new log files.

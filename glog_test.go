@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/glog/internal/logsink"
+	"github.com/hankji/glog/internal/logsink"
 )
 
 // Test that shortHostname works as advertised.
@@ -195,7 +195,6 @@ func TestHeader(t *testing.T) {
 	if contents(logsink.Info) != want {
 		t.Errorf("log format error: got:\n\t%q\nwant:\n\t%q", contents(logsink.Info), want)
 	}
-
 }
 
 // Test that an Error log goes to Warning and Info.

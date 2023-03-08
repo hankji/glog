@@ -95,8 +95,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/golang/glog/internal/logsink"
-	"github.com/golang/glog/internal/stackdump"
+	"github.com/hankji/glog/internal/logsink"
+	"github.com/hankji/glog/internal/stackdump"
 )
 
 var timeNow = time.Now // Stubbed out for testing.
