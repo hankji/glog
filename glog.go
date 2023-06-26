@@ -590,13 +590,3 @@ func Exitln(args ...any) {
 func Exitf(format string, args ...any) {
 	exitf(1, format, args...)
 }
-
-// SetThreshold set log threshold level
-func SetThreshold(level string) error {
-	return stderrThreshold.Set(level)
-}
-
-// SetLogtostderr set whether to stderr
-func SetLogtostderr(enable bool) {
-	toStderr = enable
-}
