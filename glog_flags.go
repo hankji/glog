@@ -392,7 +392,7 @@ func init() {
 
 	stderrThreshold = severityFlag(logsink.Error)
 
-	flag.BoolVar(&toStderr, "logtostderr", false, "log to standard error instead of files")
+	flag.BoolVar(&toStderr, "logtostderr", true, "log to standard error instead of files")
 	flag.BoolVar(&alsoToStderr, "alsologtostderr", false, "log to standard error as well as files")
 	flag.Var(&stderrThreshold, "stderrthreshold", "logs at or above this threshold go to stderr")
 }
